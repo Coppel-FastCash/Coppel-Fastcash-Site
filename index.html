@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coppel FastCash - Descarga Oficial</title>
+    <title>Coppel FastCash - Descarga Oficial y Segura</title>
     <!-- Favicon para el icono de la barra del navegador.
-         Reemplaza 'favicon.ico' con la ruta a tu propio archivo favicon. -->
+         Reemplaza 'favicon.ico' con la ruta a tu propio archivo favicon.
+         Este placeholder muestra 'CF' en azul sobre amarillo. -->
     <link rel="icon" href="https://placehold.co/32x32/003366/FFFFFF?text=CF" type="image/x-icon">
 
     <!-- Enlace a la CDN de Tailwind CSS para estilos modernos y responsivos -->
@@ -15,122 +16,154 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Estilos personalizados para el botón de descarga */
+        /* Estilos personalizados para el botón de descarga principal */
         .download-button {
-            transition: all 0.3s ease; /* Transición suave para efectos hover */
+            transition: all 0.3s ease-in-out; /* Transición suave para efectos hover */
+            background-image: linear-gradient(to right, #003366, #0050A0); /* Degradado atractivo */
+            box-shadow: 0 8px 16px rgba(0, 51, 102, 0.4); /* Sombra suave para profundidad */
         }
         .download-button:hover {
-            transform: translateY(-3px); /* Pequeño efecto de elevación al pasar el ratón */
-            box-shadow: 0 10px 20px rgba(0, 51, 102, 0.3); /* Sombra más pronunciada */
+            transform: translateY(-4px) scale(1.02); /* Efecto de elevación y ligero crecimiento al pasar el ratón */
+            box-shadow: 0 12px 24px rgba(0, 51, 102, 0.6); /* Sombra más pronunciada al hover */
+        }
+        .download-button:active {
+            transform: translateY(0); /* Vuelve a su posición original al hacer click */
+            box-shadow: 0 4px 8px rgba(0, 51, 102, 0.2); /* Sombra más suave al hacer click */
         }
         /* Estilos para el contenedor del logo, asegurando que se adapte */
         .logo-container img {
-            max-width: 200px; /* Ajusta el tamaño máximo del logo */
+            max-width: 240px; /* Ajusta el tamaño máximo del logo para un impacto visual */
             height: auto; /* Mantiene la proporción de la imagen */
-            margin: 0 auto; /* Centra el logo si es necesario */
+            margin: 0 auto; /* Centra el logo */
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gradient-to-br from-gray-50 to-blue-50 text-gray-800 antialiased min-h-screen flex flex-col">
     <!-- Contenedor principal de la aplicación para el diseño responsivo -->
-    <div class="min-h-screen flex flex-col">
+    <div class="flex-grow flex flex-col">
         <!-- Encabezado de la página -->
-        <header class="bg-yellow-400 p-6 text-center shadow-md">
+        <header class="bg-yellow-400 p-6 text-center shadow-lg">
             <div class="logo-container">
                 <!-- Reemplaza 'logo.png' con la ruta real de tu logo.
-                     Se ha usado un placeholder para el ejemplo. -->
-                <img src="https://placehold.co/200x50/FDD835/003366?text=Coppel+FastCash" alt="Coppel FastCash Logo" class="mx-auto rounded-lg">
+                     Se ha usado un placeholder para el ejemplo, que simula el logo de Coppel FastCash. -->
+                <img src="https://placehold.co/240x60/FDD835/003366?text=Coppel+FastCash" alt="Coppel FastCash Logo" class="mx-auto rounded-lg">
             </div>
         </header>
 
         <!-- Sección principal del contenido -->
-        <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
-            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10 text-center max-w-2xl mx-auto">
-                <h1 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-4 leading-tight">
-                    Tu Dinero, Al Instante.
+        <main class="flex-grow container mx-auto px-4 py-8 md:py-12 flex items-center justify-center">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-12 text-center max-w-3xl mx-auto border-t-4 border-blue-600">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4 leading-tight">
+                    Dinero en Tus Manos, <span class="text-yellow-500">Al Instante.</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-700 mb-6">
-                    Descarga la aplicación oficial de **Coppel FastCash** y gestiona tus finanzas con la velocidad y seguridad que solo Coppel te puede ofrecer.
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-prose mx-auto">
+                    La aplicación oficial de **Coppel FastCash** te permite gestionar tus préstamos y finanzas de forma rápida, segura y desde cualquier lugar. Descarga ahora y experimenta la inmediatez.
                 </p>
 
                 <!-- Botón de Descarga Principal -->
-                <a href="https://example.com/coppel-fastcash-app.apk" class="download-button inline-flex items-center justify-center bg-blue-700 text-white font-bold text-xl md:text-2xl px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105">
+                <a href="https://example.com/coppel-fastcash-app.apk"
+                   class="download-button inline-flex items-center justify-center text-white font-bold text-xl md:text-2xl px-10 py-5 rounded-full hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-blue-300">
                     <!-- Icono de descarga de Lucide Icons (se carga vía CDN de Unpkg) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line mr-3">
                         <path d="M12 17V3"/><path d="m6 11 6 6 6-6"/><path d="M19 21H5"/>
                     </svg>
-                    Descargar Ahora
+                    Descargar App Coppel FastCash (APK)
                 </a>
 
                 <p class="text-sm text-gray-500 mt-6">
-                    Compatible con Android 7.0 o superior. Tamaño de la aplicación: 45 MB.
+                    Versión actual: 2.1.0 | Compatible con Android 7.0+ | Tamaño: 45 MB | Última actualización: Mayo 2025
                 </p>
             </div>
-
-            <!-- Sección de Características -->
-            <section class="mt-12 md:mt-16 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">¿Por Qué Coppel FastCash?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                    <!-- Característica 1 -->
-                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-yellow-500 mb-4">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                        </svg>
-                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Préstamos al Instante</h3>
-                        <p class="text-gray-600 text-sm">Solicita y recibe dinero en tu cuenta de forma rápida, sin esperas ni trámites complicados.</p>
-                    </div>
-                    <!-- Característica 2 -->
-                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock text-green-500 mb-4">
-                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                        </svg>
-                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Seguridad Garantizada</h3>
-                        <p class="text-gray-600 text-sm">Tus datos y transacciones están protegidos con la tecnología de encriptación más avanzada.</p>
-                    </div>
-                    <!-- Característica 3 -->
-                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins text-purple-500 mb-4">
-                            <path d="M11 15h2l-2 7h2.5"/><path d="m18.5 7.5 4.07-4.07a1.9 1.9 0 0 0-2.69-2.69L15.5 4.5"/><path d="M12 11.5V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h8.5"/><path d="M17 14h.01"/><path d="M17 10h.01"/><path d="M17 18h.01"/><path d="M17 6h.01"/>
-                        </svg>
-                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Control Total</h3>
-                        <p class="text-gray-600 text-sm">Administra tus préstamos, pagos y historial directamente desde la palma de tu mano.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Sección de App Stores (para realismo) -->
-            <section class="mt-12 md:mt-16 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">También Disponible En:</h2>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
-                    <a href="https://play.google.com/store/apps/details?id=com.coppel.fastcash" target="_blank" rel="noopener noreferrer" class="transition-transform duration-300 hover:scale-105">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1000px-Google_Play_Store_badge_EN.svg.png" alt="Descargar en Google Play" class="h-16 rounded-lg">
-                    </a>
-                    <a href="https://apps.apple.com/app/coppel-fastcash/id123456789" target="_blank" rel="noopener noreferrer" class="transition-transform duration-300 hover:scale-105">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store/black.svg" alt="Descargar en App Store" class="h-16 rounded-lg">
-                    </a>
-                </div>
-            </section>
-
-            <!-- Sección de Testimonios (para realismo) -->
-            <section class="mt-12 md:mt-16 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">Lo Que Dicen Nuestros Usuarios:</h2>
-                <div class="max-w-xl mx-auto bg-blue-50 p-6 rounded-lg shadow-inner">
-                    <p class="text-lg italic text-gray-700">
-                        "¡Increíble! Coppel FastCash me sacó de un apuro en cuestión de minutos. La app es súper fácil de usar y muy segura. ¡Totalmente recomendada!"
-                    </p>
-                    <p class="mt-4 font-semibold text-blue-600">- María G., Cliente Satisfecha</p>
-                </div>
-            </section>
         </main>
 
+        <!-- Sección de Características -->
+        <section class="mt-12 md:mt-16 text-center bg-gray-100 py-12 rounded-t-3xl shadow-inner">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-10">¿Por Qué Elegir Coppel FastCash?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-4">
+                <!-- Característica 1: Préstamos al Instante -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center border-b-4 border-yellow-500 hover:shadow-lg transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-yellow-500 mb-4">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Préstamos al Instante</h3>
+                    <p class="text-gray-600 text-sm">Solicita y recibe dinero en tu cuenta de forma rápida, sin esperas ni trámites complicados.</p>
+                </div>
+                <!-- Característica 2: Seguridad Garantizada -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center border-b-4 border-green-500 hover:shadow-lg transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock text-green-500 mb-4">
+                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Seguridad Garantizada</h3>
+                    <p class="text-gray-600 text-sm">Tus datos y transacciones están protegidos con la tecnología de encriptación más avanzada.</p>
+                </div>
+                <!-- Característica 3: Control Total -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center border-b-4 border-purple-500 hover:shadow-lg transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins text-purple-500 mb-4">
+                        <path d="M11 15h2l-2 7h2.5"/><path d="m18.5 7.5 4.07-4.07a1.9 1.9 0 0 0-2.69-2.69L15.5 4.5"/><path d="M12 11.5V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h8.5"/><path d="M17 14h.01"/><path d="M17 10h.01"/><path d="M17 18h.01"/><path d="M17 6h.01"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Control Total</h3>
+                    <p class="text-gray-600 text-sm">Administra tus préstamos, pagos y historial directamente desde la palma de tu mano.</p>
+                </div>
+                <!-- Característica 4: Transferencias Interbancarias al Instante -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center border-b-4 border-red-500 hover:shadow-lg transition-shadow duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left text-red-500 mb-4">
+                        <path d="M8 3H3v5"/><path d="M3 3l5 5"/><path d="M16 21h5v-5"/><path d="M21 21l-5-5"/>
+                        <path d="M10 8h11"/><path d="M10 16h11"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Transferencias al Instante</h3>
+                    <p class="text-gray-600 text-sm">Envía y recibe dinero entre bancos de forma inmediata y segura, 24/7.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de "Pasos Sencillos para Empezar" -->
+        <section class="mt-12 md:mt-16 text-center bg-blue-700 text-white py-12 rounded-t-3xl shadow-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10">Pasos Sencillos para Empezar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+                <!-- Paso 1 -->
+                <div class="flex flex-col items-center p-6 bg-blue-800 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="bg-yellow-400 text-blue-800 rounded-full p-4 mb-4 shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">1. Descarga la App</h3>
+                    <p class="text-gray-200 text-center text-md">Obtén la aplicación oficial Coppel FastCash directamente desde esta página.</p>
+                </div>
+                <!-- Paso 2 -->
+                <div class="flex flex-col items-center p-6 bg-blue-800 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="bg-yellow-400 text-blue-800 rounded-full p-4 mb-4 shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-plus">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">2. Regístrate Fácilmente</h3>
+                    <p class="text-gray-200 text-center text-md">Crea tu cuenta en pocos minutos o inicia sesión con tus datos Coppel.</p>
+                </div>
+                <!-- Paso 3 -->
+                <div class="flex flex-col items-center p-6 bg-blue-800 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="bg-yellow-400 text-blue-800 rounded-full p-4 mb-4 shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card">
+                            <rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">3. Solicita y Disfruta</h3>
+                    <p class="text-gray-200 text-center text-md">Pide tu préstamo o realiza transferencias y recibe el dinero al instante.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Pie de página -->
-        <footer class="bg-yellow-400 p-4 text-center text-blue-800 text-sm mt-8 shadow-inner">
+        <footer class="bg-yellow-400 p-6 text-center text-blue-800 text-sm mt-auto shadow-inner">
             <p>&copy; 2025 Coppel FastCash. Todos los derechos reservados.</p>
-            <nav class="mt-2">
-                <a href="#" class="text-blue-800 hover:underline mx-2">Aviso de Privacidad</a> |
-                <a href="#" class="text-blue-800 hover:underline mx-2">Términos y Condiciones</a> |
-                <a href="#" class="text-blue-800 hover:underline mx-2">Preguntas Frecuentes</a>
+            <nav class="mt-4 flex flex-wrap justify-center items-center">
+                <a href="https://www.coppel.com/aviso-de-privacidad" target="_blank" rel="noopener noreferrer" class="text-blue-800 hover:underline mx-3 my-1 font-medium">Aviso de Privacidad</a>
+                <span class="text-blue-800 hidden md:inline">|</span>
+                <a href="https://www.coppel.com/terminos-y-condiciones" target="_blank" rel="noopener noreferrer" class="text-blue-800 hover:underline mx-3 my-1 font-medium">Términos y Condiciones</a>
+                <span class="text-blue-800 hidden md:inline">|</span>
+                <a href="https://centrodeayuda.coppel.com/s/article" target="_blank" rel="noopener noreferrer" class="text-blue-800 hover:underline mx-3 my-1 font-medium">Preguntas Frecuentes</a>
             </nav>
+            <p class="text-xs text-blue-700 mt-2">Coppel S.A. de C.V. | Boulevard Adolfo López Mateos 1301, Colonia del Bosque, C.P. 80140, Culiacán, Sinaloa, México.</p>
         </footer>
     </div>
 </body>
